@@ -180,11 +180,41 @@ Sin embargo, la señal también puede verse afectada por factores externos como:
 
 # Preguntas de discusión
 
-## ¿Por qué una inspiración profunda aumenta la GSR?
+## 1. ¿Por qué una inspiración profunda produce un aumento en la señal de GSR?
 
-La inspiración profunda activa el **sistema nervioso simpático**, lo que incrementa la actividad de las glándulas sudoríparas. Este aumento en la sudoración produce un incremento en la conductancia eléctrica de la piel, lo que se refleja como un aumento en la señal GSR.
+La inspiración profunda genera una activación del sistema nervioso autónomo, específicamente del sistema nervioso simpático. Este sistema es responsable de preparar al organismo para responder ante estímulos fisiológicos o emocionales, regulando funciones como la frecuencia cardíaca, la presión arterial y la actividad de las glándulas sudoríparas.
+
+Cuando se produce esta activación simpática, las glándulas sudoríparas ecrinas aumentan su actividad, especialmente en regiones como las palmas de las manos y las yemas de los dedos, donde existe una alta densidad de estas glándulas. El incremento en la secreción de sudor modifica las propiedades eléctricas de la piel, aumentando su conductancia eléctrica y disminuyendo su resistencia.
+
+Como consecuencia, en el circuito de medición se produce una variación en el divisor de voltaje, lo que se traduce en un cambio en el voltaje de salida medido por el microcontrolador. Este cambio es detectado por el sistema como una variación en la respuesta galvánica cutánea, reflejando el estado de activación fisiológica del sujeto.
+
+Por esta razón, estímulos como la respiración profunda, el estrés, la atención o la carga cognitiva pueden generar incrementos medibles en la señal de GSR.
 
 ---
+
+## 2. ¿Cuáles son las ventajas y limitaciones de utilizar la respuesta galvánica cutánea como indicador de estrés?
+
+La respuesta galvánica cutánea es una de las señales fisiológicas más utilizadas en estudios de psicofisiología debido a que proporciona información indirecta sobre la actividad del sistema nervioso simpático. Una de sus principales ventajas es que se trata de una técnica no invasiva, de bajo costo y relativamente sencilla de implementar mediante sensores y microcontroladores. Esto permite desarrollar dispositivos portátiles o vestibles capaces de monitorear el estado fisiológico de una persona en tiempo real.
+
+Otra ventaja importante es su alta sensibilidad ante cambios emocionales o cognitivos. La GSR puede responder rápidamente a estímulos relacionados con estrés, miedo, atención o carga mental, lo que la convierte en una herramienta útil para aplicaciones como monitoreo del estrés, investigación en neurociencia o interfaces humano-máquina.
+
+Sin embargo, esta técnica también presenta algunas limitaciones. La señal puede verse afectada por múltiples factores externos, como la temperatura ambiente, la humedad de la piel, el movimiento del sujeto o incluso diferencias fisiológicas entre individuos. Además, la GSR no mide el estrés de manera directa, sino que detecta cambios en la actividad del sistema nervioso simpático, por lo que es necesario interpretar los resultados con cautela y, en muchos casos, complementarlos con otras señales fisiológicas como frecuencia cardíaca o respiración.
+
+Por estas razones, aunque la GSR es una herramienta valiosa para la evaluación fisiológica del estrés, su uso requiere un adecuado procesamiento de señal y un análisis contextual de los datos obtenidos.
+
+---
+
+## 3. ¿Qué aspectos del diseño del dispositivo podrían mejorarse para aplicaciones clínicas o de monitoreo continuo?
+
+Aunque el sistema desarrollado cumple con el objetivo de medir variaciones en la respuesta galvánica cutánea, existen varios aspectos que podrían mejorarse para su uso en aplicaciones clínicas o de monitoreo prolongado.
+
+En primer lugar, el diseño de los electrodos podría optimizarse utilizando materiales biomédicos específicos, como electrodos de Ag/AgCl, los cuales ofrecen una mejor estabilidad electroquímica y reducen el ruido en la señal. Esto permitiría obtener mediciones más confiables y reproducibles.
+
+En segundo lugar, el sistema podría incorporar un acondicionamiento de señal más avanzado, incluyendo amplificadores operacionales, filtros analógicos o técnicas de procesamiento digital para mejorar la relación señal-ruido. Esto es especialmente importante en señales fisiológicas de baja amplitud como la GSR.
+
+Finalmente, desde el punto de vista del diseño vestible, se podrían desarrollar sensores integrados en guantes, bandas o dispositivos tipo smartwatch que mejoren la ergonomía y reduzcan el movimiento de los electrodos. También sería posible implementar algoritmos de análisis más sofisticados o técnicas de aprendizaje automático para clasificar de manera más precisa los niveles de estrés.
+
+Estas mejoras permitirían que el sistema evolucione desde un prototipo experimental hacia una herramienta más robusta para aplicaciones biomédicas o de monitoreo fisiológico en tiempo real.
 
 ## Ventajas y desventajas de utilizar GSR como indicador de estrés
 
